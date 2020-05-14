@@ -20,3 +20,5 @@ else:
 
 ujvektor = natenatep.conc([ujvektor, vektor[vegindex + 1:]])
 print(ujvektor)
+b=str(ujvektor[0:kezdoindex])+"|"+str(ujvektor[kezdoindex:vegindex+1])+"|"+str(ujvektor[vegindex+1:])
+print(b)
