@@ -41,5 +41,5 @@ while i < len(jelek):
 
     szamok.remove(szamok[i + 1])
 
-muvelet += '= ' + str(szamok[0])
+muvelet += '= ' + str(ujszam)
 print(muvelet)
