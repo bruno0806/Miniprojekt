@@ -11,13 +11,14 @@ for i in range(elvalaszto - 2):
     muvelet += str(jelek[i]) + ' '
 muvelet += str(szamok[elvalaszto - 2]) + ' '
 
+ujszam = 0
 i = 0
 while i < len(jelek):
     if jelek[i] == '*':
         jelek.remove(jelek[i])
         ujszam = szamok[i] * szamok[i + 1]
         szamok[i] = ujszam
-        szamok.remove(szamok[i + 1])
+        szamok.remove(szamok[i + 1]),
         i -= 1
 
     elif jelek[i] == '/':
@@ -30,12 +31,13 @@ while i < len(jelek):
 
 i = 0
 while i < len(jelek):
-    jel = jelek.remove(jelek[i])
-    if jel == '+':
+    if jelek[i] == '+':
+        jelek.remove(jelek[i])
         ujszam = szamok[i] + szamok[i + 1]
         szamok[i] = ujszam
 
-    elif jel == '-':
+    elif jelek[i] == '-':
+        jel = jelek.remove(jelek[i])
         ujszam = szamok[i] - szamok[i + 1]
         szamok[i] = ujszam
 
